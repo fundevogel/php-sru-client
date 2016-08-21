@@ -130,7 +130,7 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_search">search</a>(string $cql, int $start = 1, int $count = 10, array $extraParams = array())
-        
+        <small><sup><span class="label label-danger">deprecated</span></sup></small>
                                             <p>Perform a searchRetrieve request</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -139,9 +139,19 @@
                     <a href="../../Scriptotek/Sru/Records.html"><abbr title="Scriptotek\Sru\Records">Records</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_records">records</a>(string $cql, int $count = 10, array $extraParams = array(), mixed $httpClient = null)
+                    <a href="#method_all">all</a>(string $cql, int $batchSize = 10, array $extraParams = array(), mixed $httpClient = null)
         
                                             <p>Perform a searchRetrieve request and return an iterator over the records</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_records">records</a>($cql, $batchSize = 10, $extraParams = array(), $httpClient = null)
+        <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                                            <p>Alias for <code>all()</code></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -298,13 +308,20 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_search">
-        <div class="location">at line         line 138</div>
+        <div class="location">at line         line 139</div>
         <code>                    <a href="../../Scriptotek/Sru/SearchRetrieveResponse.html"><abbr title="Scriptotek\Sru\SearchRetrieveResponse">SearchRetrieveResponse</abbr></a>
     <strong>search</strong>(string $cql, int $start = 1, int $count = 10, array $extraParams = array())
-        </code>
+        <small><sup><span class="label label-danger">deprecated</span></sup></small></code>
     </h3>
     <div class="details">
             
+            <p>
+                <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                            <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </p>
     
 
                     <div class="method-description">
@@ -352,10 +369,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_records">
-        <div class="location">at line         line 158</div>
+                    <h3 id="method_all">
+        <div class="location">at line         line 159</div>
         <code>                    <a href="../../Scriptotek/Sru/Records.html"><abbr title="Scriptotek\Sru\Records">Records</abbr></a>
-    <strong>records</strong>(string $cql, int $count = 10, array $extraParams = array(), mixed $httpClient = null)
+    <strong>all</strong>(string $cql, int $batchSize = 10, array $extraParams = array(), mixed $httpClient = null)
         </code>
     </h3>
     <div class="details">
@@ -375,7 +392,7 @@
             </tr>
                     <tr>
                 <td>int</td>
-                <td>$count</td>
+                <td>$batchSize</td>
                 <td>Number of records to request per request</td>
             </tr>
                     <tr>
@@ -407,8 +424,61 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_records">
+        <div class="location">at line         line 168</div>
+        <code>                    
+    <strong>records</strong>($cql, $batchSize = 10, $extraParams = array(), $httpClient = null)
+        <small><sup><span class="label label-danger">deprecated</span></sup></small></code>
+    </h3>
+    <div class="details">
+            
+            <p>
+                <small><sup><span class="label label-danger">deprecated</span></sup></small>
+                            <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </p>
+    
+
+                    <div class="method-description">
+                                    <p>Alias for <code>all()</code></p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$cql</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$batchSize</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$extraParams</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$httpClient</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_first">
-        <div class="location">at line         line 171</div>
+        <div class="location">at line         line 181</div>
         <code>                    <a href="../../Scriptotek/Sru/Record.html"><abbr title="Scriptotek\Sru\Record">Record</abbr></a>
     <strong>first</strong>(string $cql, array $extraParams = array(), mixed $httpClient = null)
         </code>
@@ -458,7 +528,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_explain">
-        <div class="location">at line         line 182</div>
+        <div class="location">at line         line 192</div>
         <code>                    <a href="../../Scriptotek/Sru/ExplainResponse.html"><abbr title="Scriptotek\Sru\ExplainResponse">ExplainResponse</abbr></a>
     <strong>explain</strong>()
         </code>
